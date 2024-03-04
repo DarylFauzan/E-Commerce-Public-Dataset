@@ -9,8 +9,7 @@ import streamlit as st
 df = pd.read_csv("E-Commerce Merge.csv")
 
 # Mengubah kolom menjadi datetime
-datetime_columns = ['order_purchase_timestamp', 'order_approved_at',
-                    'order_estimated_delivery_date', "shipping_limit_date"]
+datetime_columns = ['order_approved_at']
 
 # Turn data to datetime type
 for column in datetime_columns:
